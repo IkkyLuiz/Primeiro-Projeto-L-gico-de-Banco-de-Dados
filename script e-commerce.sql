@@ -1,8 +1,6 @@
--- criação do banco de dados para o cenário do e-commerce
 create database ecommerce;
 
 use ecommerce;
--- criar tabela cliente
 create table client(
 		idClient int auto_increment primary key,
         Fname varchar(10),
@@ -14,9 +12,6 @@ create table client(
 );
 desc client;
 
--- criar tabela produto
-
--- size = dimensão do produto
 create table product(
 	idProduct int auto_increment primary key,
     Pname varchar(10) not null,
@@ -26,8 +21,6 @@ create table product(
     size varchar(10)
 );
 
--- para ser continuado no desafio: termine de implementar a tabela e crie a conexão com as tableas necessárias
--- além disso, reflita essa modificação no diagrama de esquema relacional
 create table payments(
 	idClient int,
     idPayment int,
@@ -36,7 +29,7 @@ create table payments(
     primary key(idClient, idPayment)
 );
 
--- criar tabela pedido
+
 create table orders(
 	idOrder int auto_increment primary key,
     idOrderClient int,
@@ -48,14 +41,13 @@ create table orders(
 );
 desc orders;
 
--- criar tabela estoque
 create table productStorage(
 	idProdStorage int auto_increment primary key,
     storageLocation varchar(225),
     quantity int default 0
 );
 
--- criar tabela fornecedor
+
 create table supplier(
 	idSupplier int auto_increment primary key,
     SocialName varchar(255) not null,
@@ -64,7 +56,6 @@ create table supplier(
     constraint unique_supplier unique (CNPJ)
 );
 
--- criar tabela vendedor
 create table seller(
 	idSeller int auto_increment primary key,
     SocialName varchar(255) not null,
