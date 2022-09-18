@@ -1,0 +1,2 @@
+# Primeiro-Projeto-L-gico-de-Banco-de-Dados
+Este projeto apresenta o primeiro projeto lógico de Banco de Dados, foi necessário construir um Esquema Conceitual para depois ser realizado o script em SQL. Para realização deste projeto foi utlizado o MySQl Workbench, disponível para download em : &lt;https://dev.mysql.com/downloads/workbench/>, ministrado por Juliana Mascarenhas na plataforma dio.me &lt;https://dio.me/sign-up?ref=YACG3ZYDVX> . 
